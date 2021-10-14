@@ -1,0 +1,12 @@
+import random, time
+a = random.randint(0,5)
+print('-=-'*20)
+print('Pensei em um número entre 0 e 5. Tente advinhar ...')
+print('-=-'*20)
+b = int(input('Qual é o número? '))
+print('PROCESSANDO...')
+time.sleep(1.5)
+if b == a:
+    print('Parabéns, você é o VENCEDOR!')
+else:
+    print('Desculpe, você PERDEU! O número era {}.'.format(a))
